@@ -1,0 +1,381 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ebeae4; /* Light elegant background like the image */
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 8px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eaeaea;
+}
+
+.logo-area h1 {
+    color: #7d8585; /* Dark Teal color */
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.logo-area p {
+    font-size: 20px;
+    color: #030303;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+}
+
+.search-bar input {
+    padding: 8px 15px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #d97736; /* Orange button accent */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #1e4646;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 25px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #143232;
+    color: #f7b733;
+}
+
+/* Hero / Banner Parent Container */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=1200') no-repeat center center/cover;
+    height: 350px;
+    
+    /* 1. In teen lines se text left aur image right-middle mein ho jayegi */
+    display: flex;
+    justify-content: space-between; /* Text left mein, image right mein */
+    align-items: center;            /* Dono ko upar-neeche se middle (center) karega */
+    
+    color: white;
+    padding: 0 10%;                 /* Left aur right side se thoda elegant gap dene ke liye */
+}
+
+/* Left Side ka Text Box */
+.hero-content {
+    max-width: 55%;                 /* Text ko aadhi jagah dega taaki image ke upar na chade */
+    text-align: left;               /* Text ko left align karega jo dekhne mein achha lagega */
+}
+
+.hero-content h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+/* Right Side ki Image */
+.hero-section img {
+    height: 350px;                  /* Banner ki height (350px) se thoda chota taaki fit baithe */
+    width: 350px;
+    object-fit: cover;              /* Image kheechegi ya kharab nahi hogi */
+    border-radius: 8px;             /* Corners ko thoda gol karne ke liye (Optional) */
+    margin-right: -120px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d97736;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #bfa52e;
+}
+
+/* Main Layout Cards */
+/* Poore body ka background match karne ke liye */
+body {
+    background-color: #f5efe6; /* Light cream background */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Teeno cards ko ek line me set karne ke liye container */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Cards ke beech ka gap */
+    flex-wrap: wrap; /* Mobile screen par cards automatic niche aa jayenge */
+    padding: 40px 20px;
+}
+
+/* Card ka main box */
+.card {
+    background-color: #ffffff;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Halka shadow effect */
+    width: 320px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card ki image */
+.card-img {
+    width: 100%;
+    object-fit: cover;
+}
+#img-1 {
+    background-image: url('img.1.jpeg');
+    background-size: cover; /* Background ko theek se fit karne ke liye */
+    background-position: center;
+    height: 341px;
+} 
+#img-1 button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border:none;
+    border-radius: 10px;
+    display: inline;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding: 5px 9px 5px 9px;
+    background: linear-gradient(5deg, red, hotpink);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+#img-1 button:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 8px 15px rgba(63, 39, 62, 0.2); 
+  transform: translateY(-2px);
+}
+
+
+
+#img-2{
+    background-image: url('img.2.png');
+    background-size: cover; /* Background ko theek se fit karne ke liye */
+    background-position: center;
+    height: 401px;
+}
+#img-2 button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border:none;
+    border-radius: 10px;
+    display: inline;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding: 5px 9px 5px 9px;
+    background: linear-gradient(5deg, red, hotpink);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+#img-2 button:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 8px 15px rgba(63, 39, 62, 0.2); 
+  transform: translateY(-2px);
+}
+
+
+#img-4{
+    background-image: url('img.4.png');
+    background-size: cover; /* Background ko theek se fit karne ke liye */
+    background-position: center;
+    height: 341px;
+}
+#img-4 button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border:none;
+    border-radius: 10px;
+    display: inline;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding: 5px 9px 5px 9px;
+    background: linear-gradient(5deg, red, hotpink);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+#img-4 button:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 8px 15px rgba(63, 39, 62, 0.2); 
+  transform: translateY(-2px);
+}
+
+/* Text aur Button ke aas-pass ka space */
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: #111;
+    margin: 0 0 10px 0;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Taaki text chhota-bada hone par bhi button sahi jagah rahe */
+}
+
+.card-author {
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* --- BUTTONS STYLING --- */
+
+/* Sabhi buttons ki common setting */
+.btn {
+    display: block;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none; /* Underline hatane ke liye */
+    border-radius: 8px; /* Button ke rounded corners */
+    color: #ffffff; /* White text color */
+    transition: background-color 0.3s ease; /* Hover effect smooth karne ke liye */
+}
+
+/* Article Button (Teal Blue) */
+.btn-article {
+    background-color: #134e5e; 
+}
+.btn-article:hover {
+    background-color: #0f3f4c; /* Hover karne par thoda dark hoga */
+}
+
+/* Poem Button (Gold/Mustard) */
+.btn-poem {
+    background-color: #c29d53;
+}
+.btn-poem:hover {
+    background-color: #aa8441;
+}
+
+/* Story Button (Maroon/Red) */
+.btn-story {
+    background-color: #8c1127;
+}
+.btn-story:hover {
+    background-color: #6e0b1d;
+}
+/* Footer */
+footer {
+    background-color: #1e4646;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* Responsive for Mobile & Tablets */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .search-bar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .search-bar input {
+        width: 60%;
+    }
+
+    /* 👇 Yahan changes kiye gaye hain 👇 */
+
+    nav ul {
+        flex-direction: row;     /* Column hata kar row kar diya */
+        flex-wrap: wrap;         /* Agar jagah kam ho to text aage wali line me aa jaye */
+        justify-content: center; /* Items ko center me rakhne ke liye */
+        align-items: center;    
+        gap: 5px;                /* Items ke beech thoda gap dene ke liye */
+    }
+    
+    nav ul li a {
+        display: inline-block; 
+        text-align: center;
+        padding: 8px 12px;       /* Padding thodi kam ki taaki jyada items fit hon */
+        font-size: 14px;         /* Mobile ke hisaab se font thoda chota kiya */
+        border-radius: 4px;      /* Buttons ko thoda gol look dene ke liye */
+    }
+    /* 👆 Yahan tak 👆 */
+
+    .hero-section {
+        flex-direction: column;
+        height: auto; 
+        padding: 40px 5%;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .hero-section img {
+        width: 100%;
+        max-width: 350px;
+        margin-right: 0; 
+        height: auto;
+    }
+
+    #img-1, #img-2 {
+        height: 250px; 
+    }
+}
